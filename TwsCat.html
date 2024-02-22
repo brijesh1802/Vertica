@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earphones</title>
+    <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+    <div class="container">
+
+      <div class="overlay" ></div>
+
+      <a href="#" class="logo">
+        <img src="./images/logo-ver1.png" width="100" height="100" alt="logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+        <img src="./images/logo-ver1.png" width="100" height="100" alt="logo">
+      </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./TEAM/index.html" class="navbar-link">About Devs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#pr" class="navbar-link">Products</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./Contact/index.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Search</span>
+            </button>
+          </li>
+
+          <li>
+            <a href="./Personal Info/index.html" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Profile</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./Login/index.html" class="navbar-link">Login</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./Sign Up/index.html" class="navbar-link">SignUp</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="section product">
+    <div class="container">
+
+      <h2 class="h2 section-title">True Wireless Earphones</h2>
+
+      <ul class="filter-list">
+
+        <li>
+          <button class="filter-btn  active">All</button>
+        </li>
+
+        <li>
+          <button class="filter-btn">Price : Low to High</button>
+        </li>
+
+        <li>
+          <button class="filter-btn">Price : High to Low</button>
+        </li>
+
+        <li>
+          <button class="filter-btn">Best Selling</button>
+        </li>
+
+        <li>
+          <button class="filter-btn">Relevance</button>
+        </li>
+
+      </ul>
+
+      <ul class="product-list">
+
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="./TWSimg/img-1.png" width="312" height="350" loading="lazy"
+                alt="smartwatch" class="image-contain">
+
+              <div class="card-badge">New</div>
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-2">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-3">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-4">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                </li>
+
+              </ul>
+            </figure>
+
+            <div class="card-content" role="region" aria-label="Product Information">
+
+              <div class="card-cat" aria-label="Product Categories">
+                <a href="#" class="card-cat-link">ASAP<sup>TM</sup> Charge</a> /
+                <a href="#" class="card-cat-link">Metal Glider</a>
+              </div>
+
+              <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Immortal Katana Blade</a>
+              </h3>
+
+              <data class="card-price" aria-label="Product Price" value="180.85">&#8377  3699</data>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="./TWSimg/img-3.png" width="312" height="350" loading="lazy"
+                alt="tws" class="image-contain">
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-2">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-3">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-4">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                </li>
+
+              </ul>
+            </figure>
+
+            <div class="card-content" role="region" aria-label="Product Information">
+
+              <div class="card-cat" aria-label="Product Categories">
+                <a href="#" class="card-cat-link">BT v5.0</a> /
+                <a href="#" class="card-cat-link">IPX5 Rating</a>
+              </div>
+
+              <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Airdopes 383 Sunburn Edition</a>
+              </h3>
+
+              <data class="card-price" aria-label="Product Price" value="190.85">&#8377  2999 </data>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="./TWSimg/img-9.png" width="312" height="350" loading="lazy"
+                alt="smartwatch" class="image-contain">
+
+              <div class="card-badge">New</div>
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-2">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-3">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-4">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                </li>
+
+              </ul>
+            </figure>
+
+            <div class="card-content" role="region" aria-label="Product Information">
+
+              <div class="card-cat" aria-label="Product Categories">
+                <a href="#" class="card-cat-link">380mAh Battery</a> /
+                <a href="#" class="card-cat-link">Ultra Light Weight</a>
+              </div>
+
+              <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">TRebel Airdopes 121 v2</a>
+              </h3>
+
+              <data class="card-price" aria-label="Product Price" value="160.85">&#8377  1299 </data>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="./TWSimg/img-5.png" width="312" height="350" loading="lazy"
+                alt="neckband" class="image-contain">
+
+              <div class="card-badge"> -25%</div>
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-2">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-3">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-4">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                </li>
+
+              </ul>
+            </figure>
+
+            <div class="card-content" role="region" aria-label="Product Information">
+
+              <div class="card-cat" aria-label="Product Categories">
+                <a href="#" class="card-cat-link">Beast<sup>TM</sup> Mode</sup></a> /
+                <a href="#" class="card-cat-link">IP64 Rating</a>
+              </div>
+
+              <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">TRebel Immortal 121</a>
+              </h3>
+
+              <data class="card-price" aria-label="Product Price" value="170.85">&#8377  1699 <del>&#8377  3490</del></data>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="./TWSimg/img-6.png" width="312" height="350" loading="lazy"
+                alt="headphone" class="image-contain">
+
+              <div class="card-badge">New</div>
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-2">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-3">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-4">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                </li>
+
+              </ul>
+            </figure>
+
+            <div class="card-content" role="region" aria-label="Product Information">
+
+              <div class="card-cat" aria-label="Product Categories">
+                <a href="#" class="card-cat-link">ANC</a> /
+                <a href="#" class="card-cat-link">13mm Drivers</a>
+              </div>
+
+              <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Airdopes 413 ANC</a>
+              </h3>
+
+              <data class="card-price" aria-label="Product Price" value="120.85">&#8377  2299</data>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="./TWSimg/img-7.png" width="312" height="350" loading="lazy"
+                alt="wireless speakers" class="image-contain">
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-2">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-3">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-4">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                </li>
+
+              </ul>
+            </figure>
+
+            <div class="card-content" role="region" aria-label="Product Information">
+
+              <div class="card-cat" aria-label="Product Categories">
+                <a href="#" class="card-cat-link">BT v5.3</a> /
+                <a href="#" class="card-cat-link">12mm Drivers</a>
+              </div>
+
+              <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">TRebel Airdopes 141 Pro</a>
+              </h3>
+
+              <data class="card-price" aria-label="Product Price" value="100.85">&#8377  1599</data>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="./TWSimg/img-8.png" width="312" height="350" loading="lazy"
+                alt="wired-earphones" class="image-contain">
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-2">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-3">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-4">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                </li>
+
+              </ul>
+            </figure>
+
+            <div class="card-content" role="region" aria-label="Product Information">
+
+              <div class="card-cat" aria-label="Product Categories">
+                <a href="#" class="card-cat-link">470mAh Battery</a> /
+                <a href="#" class="card-cat-link">IPX4 Rating</a>
+              </div>
+
+              <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Airdopes 201</a>
+              </h3>
+
+              <data class="card-price" aria-label="Product Price" value="120.85">&#8377  1999</data>
+
+            </div>
+
+          </div>
+        </li>
+
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="./TWSimg/img-4.png" width="312" height="350" loading="lazy"
+                alt="headphone" class="image-contain">
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-2">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-3">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                </li>
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-4">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                </li>
+
+              </ul>
+            </figure>
+
+            <div class="card-content" role="region" aria-label="Product Information">
+
+              <div class="card-cat" aria-label="Product Categories">
+                <a href="#" class="card-cat-link">Wake'n'Pair</a> /
+                <a href="#" class="card-cat-link">13mm Drivers</a>
+              </div>
+
+              <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Airdopes 161 Hulk Edition</a>
+              </h3>
+
+              <data class="card-price" aria-label="Product Price" value="100.85">&#8377  999</data>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-1.png" width="312" height="350" loading="lazy"
+                  alt="smartwatch" class="image-contain">
+  
+                <div class="card-badge">New</div>
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">ASAP<sup>TM</sup> Charge</a> /
+                  <a href="#" class="card-cat-link">Metal Glider</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Immortal Katana Blade</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="180.85">&#8377  3699</data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-3.png" width="312" height="350" loading="lazy"
+                  alt="tws" class="image-contain">
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">BT v5.0</a> /
+                  <a href="#" class="card-cat-link">IPX5 Rating</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Airdopes 383 Sunburn Edition</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="190.85">&#8377  2999 </data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-9.png" width="312" height="350" loading="lazy"
+                  alt="smartwatch" class="image-contain">
+  
+                <div class="card-badge">New</div>
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">380mAh Battery</a> /
+                  <a href="#" class="card-cat-link">Ultra Light Weight</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">TRebel Airdopes 121 v2</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="160.85">&#8377  1299 </data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-5.png" width="312" height="350" loading="lazy"
+                  alt="neckband" class="image-contain">
+  
+                <div class="card-badge"> -25%</div>
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">Beast<sup>TM</sup> Mode</sup></a> /
+                  <a href="#" class="card-cat-link">IP64 Rating</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">TRebel Immortal 121</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="170.85">&#8377  1699 <del>&#8377  3490</del></data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-6.png" width="312" height="350" loading="lazy"
+                  alt="headphone" class="image-contain">
+  
+                <div class="card-badge">New</div>
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">ANC</a> /
+                  <a href="#" class="card-cat-link">13mm Drivers</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Airdopes 413 ANC</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="120.85">&#8377  2299</data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-7.png" width="312" height="350" loading="lazy"
+                  alt="wireless speakers" class="image-contain">
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">BT v5.3</a> /
+                  <a href="#" class="card-cat-link">12mm Drivers</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">TRebel Airdopes 141 Pro</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="100.85">&#8377  1599</data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-8.png" width="312" height="350" loading="lazy"
+                  alt="wired-earphones" class="image-contain">
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">470mAh Battery</a> /
+                  <a href="#" class="card-cat-link">IPX4 Rating</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Airdopes 201</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="120.85">&#8377  1999</data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-4.png" width="312" height="350" loading="lazy"
+                  alt="headphone" class="image-contain">
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">Wake'n'Pair</a> /
+                  <a href="#" class="card-cat-link">13mm Drivers</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Airdopes 161 Hulk Edition</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="100.85">&#8377  999</data>
+  
+              </div>
+  
+            </div>
+          </li>
+
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-1.png" width="312" height="350" loading="lazy"
+                  alt="smartwatch" class="image-contain">
+  
+                <div class="card-badge">New</div>
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">ASAP<sup>TM</sup> Charge</a> /
+                  <a href="#" class="card-cat-link">Metal Glider</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Immortal Katana Blade</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="180.85">&#8377  3699</data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-3.png" width="312" height="350" loading="lazy"
+                  alt="tws" class="image-contain">
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">BT v5.0</a> /
+                  <a href="#" class="card-cat-link">IPX5 Rating</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Airdopes 383 Sunburn Edition</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="190.85">&#8377  2999 </data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-9.png" width="312" height="350" loading="lazy"
+                  alt="smartwatch" class="image-contain">
+  
+                <div class="card-badge">New</div>
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">380mAh Battery</a> /
+                  <a href="#" class="card-cat-link">Ultra Light Weight</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">TRebel Airdopes 121 v2</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="160.85">&#8377  1299 </data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-5.png" width="312" height="350" loading="lazy"
+                  alt="neckband" class="image-contain">
+  
+                <div class="card-badge"> -25%</div>
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">Beast<sup>TM</sup> Mode</sup></a> /
+                  <a href="#" class="card-cat-link">IP64 Rating</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">TRebel Immortal 121</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="170.85">&#8377  1699 <del>&#8377  3490</del></data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+  
+              <figure class="card-banner">
+                <img src="./TWSimg/img-6.png" width="312" height="350" loading="lazy"
+                  alt="headphone" class="image-contain">
+  
+                <div class="card-badge">New</div>
+  
+                <ul class="card-action-list">
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+  
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+  
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+  
+                </ul>
+              </figure>
+  
+              <div class="card-content" role="region" aria-label="Product Information">
+  
+                <div class="card-cat" aria-label="Product Categories">
+                  <a href="#" class="card-cat-link">ANC</a> /
+                  <a href="#" class="card-cat-link">13mm Drivers</a>
+                </div>
+  
+                <h3 class="h3 card-title" aria-label="Product Title">
+                <a href="earphone.html">Airdopes 413 ANC</a>
+                </h3>
+  
+                <data class="card-price" aria-label="Product Price" value="120.85">&#8377  2299</data>
+  
+              </div>
+  
+            </div>
+          </li>
+  
+         
+  
+
+        
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./images/logo-ver1.png" width="160" height="50" alt=" logo">
+          </a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  2751 S Parker Rd, Aurora, CO 80014, United States
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+557343673257" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+968 4453 2245</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:vertica@help.com" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">vertica@help.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">My Account</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">My Account</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">View Cart</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Wishlist</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Compare</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">New Products</span>
+              </a>
+            </li>
+
+          </ul>
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">About us</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Read Our Blog</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Careers</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Warranty Policy</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">News</span>
+              </a>
+            </li>
+
+          </ul>
+
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="newsletter-text">
+              Authoritatively morph 24/7 potentialities with error-free partnerships.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="#" class="copyright-link">VERTICA</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

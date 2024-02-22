@@ -1,0 +1,159 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Contact Form</title>
+      <link rel="stylesheet" href="style.css" />
+      <script
+        src="https://kit.fontawesome.com/64d58efce2.js"crossorigin="anonymous" ></script>
+    </head>
+    <body>
+      <div class="navbar">
+        <a href=""><img src="./img/logo-ver1.png"></a>
+        <a href="../Index.html">Home</a>
+        <a href="../Index.html">Products</a>
+        <a href="">Shop</a>
+        <a href="">Blog</a>
+        <a href="../TEAM/index.html">About Devs</a>
+        <a href="#">Contact Us</a>
+        <a href="">SignUp</a>
+        <a href="">Login</a>
+
+        
+       
+    </div>
+      <div class="container">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Contact Us</h3>
+            <p class="text">
+              VERTICA- Digital
+            </p>
+
+            <div class="info">
+              <div class="information">
+                <img src="img/location.png" class="icon" alt="" />
+                <p>506-B MIT AB-4 Manipal</p>
+              </div>
+              <div class="information">
+                <img src="img/email.png" class="icon" alt="" />
+                <p>contact@gmail.com</p>
+              </div>
+              <div class="information">
+                <img src="img/phone.png" class="icon" alt="" />
+                <p>876-456-789</p>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form" class="was-validated ">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+
+            <form autocomplete="off" onsubmit="return openPopup()">
+              <h3 class="title">Feedback</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" required />
+                <label for="">Name</label >
+                <span>Name</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" required  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" required   pattern="[0-9]{10}"/>
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input" required></textarea>
+                <label for="">Feedback</label>
+                <span>Feedback</span>
+              </div>
+              <div class="col-12">
+              <input type="submit" value="Send" class="btn"/>
+              <div id="wrapper" ></div>
+                <div class="popup" id="popup">
+                  <img src="./img/logo-ver1.png">
+                    <h2>Thank You!</h2>
+                      <p>your valued feedback</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="navbar" style="background-color:black;">
+          <a href="#home"><img src="./img/logo-ver1.png"></a>
+          <table>
+          <tr>
+            <td>
+              <p style="font-weight: bold; color: whitesmoke; background:red;">GET IN TOUCH:</p>
+              <a href="#" class="fa fa-facebook" style="color: whitesmoke;">_Facebook</a>
+              <a href="#" class="fa fa-youtube" style="color: whitesmoke;">_YouTube</a>
+              <a href="#" class="fa fa-pinterest" style="color: whitesmoke;">_Pinterest</a>
+              <a href="#" class="fa fa-linkedin" style="color: whitesmoke;">-LinkedIn</a>
+              <a href="#" class="fa fa-skype" style="color: whitesmoke;">_Skype</a>
+              <a href="#" class="fa fa-twitter" style="color: whitesmoke;">_Twitter</a>
+              <a href="#" class="fa fa-instagram" style="color: whitesmoke;">_Instagram</a>
+              <a href="#" class="fa fa-reddit" style="color: whitesmoke;">_Reddit</a>
+              <a href="#" class="fa fa-vine" style="color: whitesmoke;">_Vine</a>
+              <a href="#" class="fa fa-google" style="color: whitesmoke;">_Google</a>
+             <!--<a href="#" class="fa fa-snapchat-ghost" style="color: whitesmoke;">_SnapChat</a>
+              <a href="#" class="fa fa-skype" style="color: whitesmoke;">_Skype</a>-->
+          </td>
+          </tr>
+          <tr>
+          <td>
+            
+          <a href="#home" style="padding-left:50 px;color: whitesmoke;">Home</a>
+          <a href="#about" style="color: whitesmoke;">About</a>
+          <a href="#services" style="color: whitesmoke;">Products</a>
+          <a href="#portfolio" style="color: whitesmoke;">Team</a>
+          <a href="#contact" style="color: whitesmoke;">Feedback</a>
+          <a href="#blog" style="color: whitesmoke;">Contact</a>
+          <a href="#services" style="color: whitesmoke;">Blog</a>
+          <a href="#portfolio" style="color: whitesmoke;">Article</a>
+          <a href="#contact" style="color: whitesmoke;">News</a>
+          <a href="#blog"></a>
+          <a  style="color: whitesmoke;"> Copyright © 2023 vertica. All Rights Reserved.</a>
+          
+          </td>
+        </tr>
+          <tr>
+           <P></P>
+        </td>
+          </tr>
+          </table>
+         
+      </div>
+      </footer>
+      
+      <script src="app.js"></script>
+    </body>
+</html>

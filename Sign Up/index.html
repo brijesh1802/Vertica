@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f1f1f1;
+    }
+
+    .form1 {
+      background-color: hsl(5, 100%, 69%);
+    }
+
+    #signupForm {
+      background-color: #ffffff;
+      margin: 45px auto;
+      font-family: Raleway;
+      padding: 40px;
+      width: 70%;
+      min-width: 300px;
+      filter: drop-shadow(5px 18px 12px black);
+    }
+
+    #signupBtn {
+      margin-left: 27vw;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input,
+    select {
+      padding: 10px;
+      width: 100%;
+      font-size: 17px;
+      font-family: Raleway;
+      border: 1px solid #aaaaaa;
+    }
+
+    /* Mark input boxes that gets an error on validation: */
+    input.invalid {
+      background-color: #ffdddd;
+    }
+
+    input.valid {
+      border: 1px green solid;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .noerror {
+      display: none;
+    }
+
+    #signupBtn {
+      background-color: #4caf50;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 17px;
+      font-family: Raleway;
+      cursor: pointer;
+    }
+
+    #signupBtn:hover {
+      opacity: 0.8;
+    }
+
+    #prevBtn {
+      background-color: #bbbbbb;
+    }
+  </style>
+</head>
+
+<body>
+  <!---NAVBAR-->
+  <header class="header">
+    <div class="container">
+
+      <div class="overlay"></div>
+
+      <a href="#" class="logo">
+        <img src="../images/logo-ver1.png" width="190" height="90" alt="logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="../images/logo-ver1.png" width="190" height="50" alt="logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../Index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../TEAM/index.html" class="navbar-link">About Devs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../Index.html" class="navbar-link">Products</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../Contact/index.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Search</span>
+            </button>
+          </li>
+
+          <li>
+            <a href="../Personal Info/index.html" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Profile</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../Login/index.html" class="navbar-link">Login</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">SignUp</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+  <!---NAVBAR END-->
+
+  <div class="form1">
+    <form id="signupForm" action="/action_page.php">
+      <h1>Create your Account:</h1>
+      <div class="tab">
+        <label for="uname">Username</label>
+        <p>
+          <input placeholder="Enter Username" id="uname" oninput="validateUserName(this)" name="uname"
+            data-toggle="tooltip" title="First Letter Capital, no special characters or number" />
+        </p>
+        <p id="unameerror"></p>
+        <label for="pwd">Password</label>
+        <p>
+          <input placeholder="Enter Password" oninput="validatePassword(this)" name="pword" type="password" id="pwd"
+            data-toggle="tooltip" title="Use Uppercase, Lowercase, Special Character and Number" />
+        </p>
+        <p id="pwderror"></p>
+        <label for="cpwd">Confirm Password</label>
+        <p>
+          <input placeholder="Confirm Password" id="cpwd" oninput="validateConfirmPassword(this)" name="pword"
+            type="password" />
+        </p>
+        <p id="cnfrmpwderror"></p>
+        <label for="answer">Security Question</label>
+        <p>
+          <Select name="Security Question">
+            <option value="0">Answer any one question for security purposes</option>
+            <option value="1">What is your mother's maiden name?</option>
+            <option value="2">What was the name of your first pet?</option>
+            <option value="3">What is your favorite sports team?</option>
+            <option value="4">What is the name of your childhood best friend?</option>
+            <option value="5">What was the name of your first elementary school?</option>
+          </Select>
+        </p>
+        <p>
+          <input placeholder="Write your answer here..." oninput="validateSecurityAnswer(this)" name="answer"
+            type="text" id="answer" required />
+        </p>
+        <p id="answererror"></p>
+      </div>
+      <div>
+        <button type="button" id="signupBtn" onclick="signUp()">Sign Up</button>
+      </div>
+      <span>Already have an account?</span><a href="../Login/index.html"> Log In Here</a>
+    </form>
+
+    <script src="./script.js"></script>
+  </div>
+
+
+  <!--FOOTER-->
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="../images/logo-ver1.png" width="160" height="50" alt="logo">
+          </a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  2751 S Parker Rd, Aurora, CO 80014, United States
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+557343673257" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+968 4453 2245</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:vertica@help.com" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">vertica@help.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">My Account</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">My Account</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">View Cart</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Wishlist</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Compare</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">New Products</span>
+              </a>
+            </li>
+
+          </ul>
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">About us</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Read Our Blog</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Careers</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Warranty Policy</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">News</span>
+              </a>
+            </li>
+
+          </ul>
+
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="newsletter-text">
+              Authoritatively morph 24/7 potentialities with error-free partnerships.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="#" class="copyright-link">VERTICA</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+  - #GO TO TOP
+-->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+  - custom js link
+-->
+  <!-- <script src="script.js"></script> -->
+
+  <!-- 
+  - ionicon link
+-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--FOOTER END-->
+</body>
+
+</html>
